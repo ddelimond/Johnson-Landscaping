@@ -198,6 +198,7 @@ a:visited {
     padding-top: 5px;
     font-size: 2rem;
     color: var(--primary);
+    margin: auto;
 }
 
 .scroll-section span {
@@ -410,6 +411,10 @@ footer {
         flex-direction: column;
         row-gap: 20px;
 
+    }
+
+    .about-content {
+        width: 100%;
     }
 
     .seasonal-services {
