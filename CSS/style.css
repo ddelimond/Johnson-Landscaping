@@ -326,6 +326,10 @@ footer {
 
 }
 
+footer p {
+    margin: auto;
+}
+
 
 /* Desktop */
 
