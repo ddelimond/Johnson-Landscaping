@@ -259,9 +259,12 @@ a:visited {
 
 .image-container {
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.seasonal-services {
+/* .seasonal-services {
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -269,27 +272,46 @@ a:visited {
     text-align: center;
     margin-bottom: 20px;
 
+} */
+
+.seasonal-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin: 0px auto;
+    margin-bottom: 20px;
 }
 
 .content-container {
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    margin-left: 20px;
 }
 
 .services-layout {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 20px;
+    /* flex-direction: row;
+    align-items: center; */
+    justify-content: space-evenly;
+    /* column-gap: 20px; */
     text-align: center;
+    width: 100vw;
+    margin-bottom: 20px;
 }
 
 .season-container {
-    width: 200px;
+    /* width: 200px; */
+    margin: auto;
 }
 
 .season-container h4 {
     color: var(--secondary);
+    width: 75%;
+    margin: auto;
 }
 
 #services {
@@ -308,6 +330,8 @@ a:visited {
 
 #services ul {
     list-style: none;
+    width: 75%;
+    margin: auto;
 }
 
 #services li {
@@ -434,7 +458,7 @@ footer p {
     }
 
     .content-container {
-        display: none;
+        width: initial;
     }
 
     .image-container {
