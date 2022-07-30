@@ -63,9 +63,11 @@
         <h3>About <span>Us</span></h3>
         <div class="about-container">
             <div class="about-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam saepe itaque error voluptates
-                    impedit! Incidunt consequatur quaerat commodi placeat at, corrupti sed nam iusto voluptates, in
-                    exercitationem adipisci! Eveniet?</p>
+                <p>This is placeholder text.This is placeholder text.This is placeholder text.This is placeholder
+                    text.This is placeholder text.This is placeholder text.This is placeholder text.This is placeholder
+                    text.This is placeholder text.
+
+                </p>
             </div>
             <div class="">
                 <div class=""><img src="/Logo/Johnson Trans.png" alt="Johnson's Logo"></div>
@@ -132,13 +134,58 @@
     <section id="clients" class="scroll-section">
         <h3>Our <span>Clients</span></h3>
         <div class="client-container">
-            <button class="left-btn btn"><i class="fa-solid fa-chevron-left"></i></button>
-            <section class="client-img-container">
-                <img src="/Assets/Past Jobs/House-2.jpeg" class="image" alt="Client Job Image">
-            </section>
-            <button class="right-btn btn"><i class="fa-solid fa-chevron-right"></i></button>
+
+            <div class="client-img-container">
+                <img src="/Assets/Past Jobs/House-2.jpeg" class="image" data-id="1" alt="Client Job Image">
+            </div>
+
+            <div class="client-img-container">
+                <img src="/Assets/Past Jobs/House-3.jpeg" class="image" data-id="2" alt="Client Job Image">
+            </div>
+
+            <div class="client-img-container">
+                <img src="/Assets/Past Jobs/House-1.jpeg" class="image" data-id="3" alt="Client Job Image">
+            </div>
+
+            <div class="client-img-container">
+                <img src="/Assets/Past Jobs/House-1-Side.jpeg" class="image" data-id="4" alt="Client Job Image">
+            </div>
+
+            <div class="client-img-container">
+                <img src="/Assets/Past Jobs/Garden-1.jpeg" class="image" data-id="5" alt="Client Job Image">
+            </div>
+
+            <div class="client-img-container">
+                <img src="/Assets/Past Jobs/garden-2.jpeg" class="image" data-id="6" alt="Client Job Image">
+            </div>
+
         </div>
     </section>
+
+
+    <div class="modal-overlay">
+        <button class="close-btn btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-top">
+            <button class="left-btn prev-btn btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="modal-image-container">
+                <img src="/Assets/Past Jobs/garden-2.jpeg" class="main-image" data-id="6" alt="Client Job Image">
+            </div>
+            <button class="right-btn next-btn btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="modal-bottom">
+            <!-- <div class="modal-content-container">
+                <img src="/Assets/Past Jobs/garden-2.jpeg" class="modal-image" alt="Client Job Image">
+            </div>
+            <div class="modal-content-container">
+                <img src="/Assets/Past Jobs/garden-2.jpeg" class="modal-image" alt="Client Job Image">
+            </div>
+            <div class="modal-content-container">
+                <img src="/Assets/Past Jobs/garden-2.jpeg" class="modal-image" alt="Client Job Image">
+            </div> -->
+        </div>
+    </div>
     <!-- footer -->
     <footer>
         <p>Copyright &copy; Save the Yard LLC <span class="date"> </span> All Rights Reserved.</p>
