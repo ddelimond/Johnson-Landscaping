@@ -134,6 +134,17 @@ function Gallery(element) {
 Gallery.prototype.open = function (image, list) {
     this.modal.classList.add('open');
     this.mainModalImage.src = image.src
+
+    document.addEventListener("orientationchange", function (event) {
+        switch (window.orientation) {
+            case -90: case 90:
+                /* Device is in landscape mode */
+                break;
+            default:
+            /* Device is in portrait mode */
+        }
+    });
+
     this.mainModalImage.dataset.id = image.dataset.id
     this.modalBottom.innerHTML = list.map(function (image) {
         return `
