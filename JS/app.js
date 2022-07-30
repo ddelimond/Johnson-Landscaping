@@ -61,7 +61,7 @@ scrollLinks.forEach(function (link) {
 
         window.scrollTo(0, sectionPosition)
 
-        linkContainer.style.height = '0px'
+        linkContainer.style.height = '0px';
     })
 })
 
