@@ -96,7 +96,6 @@ function Gallery(element) {
 
 Gallery.prototype.open = function (image, list) {
     this.modal.classList.add('open');
-    this.rotateScreen.bind(this);
     this.mainModalImage.src = image.src
 
 
