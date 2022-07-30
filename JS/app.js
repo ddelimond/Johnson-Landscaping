@@ -1,43 +1,8 @@
 
-// Variables
-let clientImages = [
-    { img: "/Assets/Past Jobs/House-2.jpeg" },
-    { img: "/Assets/Past Jobs/House-3.jpeg" },
-    { img: "/Assets/Past Jobs/Garden-1.jpeg" },
-    { img: "/Assets/Past Jobs/garden-2.jpeg" },
-    { img: "/Assets/Past Jobs/House-1-Side.jpeg" },
-    { img: "/Assets/Past Jobs/House-1.jpeg" }
-]
-
-// let intialIndex = 0;
 let date = document.querySelector('.date');
 let header = document.querySelector('header');
 let scrollLinks = document.querySelectorAll('.scroll-link')
 
-// Button Functionality
-
-// let next = function () {
-//     if (intialIndex === 0) { intialIndex++; showClient(intialIndex) }
-//     else if (intialIndex < indexOfLastClientImage) { intialIndex++; showClient(intialIndex) }
-//     else if (intialIndex === indexOfLastClientImage) { intialIndex = 0; showClient(intialIndex) }
-// }
-// let prev = function () {
-//     if (intialIndex === 0) { intialIndex = indexOfLastClientImage; showClient(intialIndex) }
-//     else if (intialIndex > 0) { intialIndex--; showClient(intialIndex) }
-// }
-// nextButton.addEventListener('click', next);
-// prevButton.addEventListener('click', prev);
-
-// // Load Client Photos
-// window.addEventListener('DOMContentLoaded', function () {
-//     showClient(intialIndex);
-// })
-
-
-// function showClient(index) {
-//     let imgSource = clientImages[index];
-//     clientImage.src = imgSource.img;
-// }
 
 // Dynamic Copyright Date
 
@@ -86,8 +51,6 @@ scrollLinks.forEach(function (link) {
         let linkHeight = links.getBoundingClientRect().height;
         let fixedNav = header.classList.contains('scroll');
 
-        // if (header.classList.contains('scroll')) { window.scrollTo(0, Number(`${sectionPosition}`) - Number(document.querySelector('.logo-container').getBoundingClientRect().height)) }
-
         if (!fixedNav) {
             sectionPosition = sectionPosition - navHeight
         }
@@ -133,17 +96,10 @@ function Gallery(element) {
 
 Gallery.prototype.open = function (image, list) {
     this.modal.classList.add('open');
+    this.rotateScreen.bind(this);
     this.mainModalImage.src = image.src
 
-    document.addEventListener("orientationchange", function (event) {
-        switch (window.orientation) {
-            case -90: case 90:
-                /* Device is in landscape mode */
-                break;
-            default:
-            /* Device is in portrait mode */
-        }
-    });
+
 
     this.mainModalImage.dataset.id = image.dataset.id
     this.modalBottom.innerHTML = list.map(function (image) {
@@ -190,6 +146,9 @@ Gallery.prototype.clickOnModalImage = function (image) {
     selectedImage.classList.add('selected');
     this.mainModalImage.src = selectedImage.src;
 }
+
+
+
 
 
 
