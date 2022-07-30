@@ -360,8 +360,8 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* width: 90vw; */
-    width: 50%;
+    width: 90vw;
+
 }
 
 .modal-bottom {
