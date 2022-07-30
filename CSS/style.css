@@ -44,6 +44,13 @@ header {
     z-index: 6;
     opacity: .8;
     box-shadow: 3px 3px 6px grey;
+    row-gap: 15px;
+}
+
+.business-hours {
+    text-align: center;
+    font-size: 10px;
+    margin: auto;
 }
 
 .logo-container {
@@ -71,6 +78,12 @@ header ul li a:visited:hover,
 header ul li a:link:hover {
     box-shadow: 0px 4px 6px -6px grey;
     font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* mobile */
@@ -434,6 +447,10 @@ footer {
     align-items: center;
     color: var(--primary);
     opacity: .8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
 }
 
@@ -517,7 +534,7 @@ footer p {
     }
 
     header {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         height: 70px;
     }
@@ -581,7 +598,6 @@ footer p {
 
 @media (max-width: 650px) {
 
-
     .image-container {
         width: initial;
     }
@@ -596,6 +612,10 @@ footer p {
 
     .modal-image-container {
         width: initial
+    }
+
+    .navigation {
+        display: initial;
     }
 
 }
