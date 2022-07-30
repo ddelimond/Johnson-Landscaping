@@ -447,11 +447,6 @@ footer {
     align-items: center;
     color: var(--primary);
     opacity: .8;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
 }
 
 footer p {
