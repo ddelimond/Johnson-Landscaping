@@ -33,7 +33,7 @@
         <div class="navigation">
             <div class="logo-container">
                 <a href="index.html" class="home-button">
-                    <img class="logo" src="/Logo/Transparent-2.png" alt="">
+                    <img class="logo" src="/Logo/Transparent-2.png">
                 </a>
                 <button class="hamburger">
                     <i class="fa-solid fa-bars"></i>
@@ -43,10 +43,10 @@
 
             <nav class="link-container">
                 <ul class="links">
-                    <li><a href="index.html" class="scroll-link">Home</a></li>
-                    <li><a href="index.html #about" class="scroll-link">About</a></li>
-                    <li><a href="#services" class="scroll-link">Services</a></li>
-                    <li><a href="#clients" class="scroll-link">Our Clients</a></li>
+                    <li> <a href="index.html" class="scroll-link">Home</a></li>
+                    <li> <a href="index.html#about" class="scroll-link">About</a></li>
+                    <li> <a href="index.html#services" class="scroll-link">Services</a></li>
+                    <li> <a href="index.html#clients" class="scroll-link">Our Clients</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,20 +56,34 @@
     </header>
     <!-- contact form -->
 
-    <section id="contact" class="scroll-section">
+    <section id="contact" class="contact-section">
         <h3>Contact <span>Us</span></h3>
-        <div class="about-container">
-            <div class="about-content">
-                <p>This is placeholder text.This is placeholder text.This is placeholder text.This is placeholder
-                    text.This is placeholder text.This is placeholder text.This is placeholder text.This is placeholder
-                    text.This is placeholder text.
+        <form action="">
+            <div class="feild">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="John">
+            </div>
+            <div class="feild">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Doe">
+            </div>
+            <div class="feild">
+                <label for="email">Email</label>
+                <input type="email" id="topic" placeholder="JohnDoe@gmail.com">
+            </div>
+            <div class="feild">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" placeholder="(555)-555-5555">
+            </div>
 
-                </p>
+            <div class="feild">
+                <label for="message">Message</label><br>
+                <input type="text" id="message" placeholder="Please enter your Message">
             </div>
-            <div class="">
-                <div class=""><img src="/Logo/Johnson Trans.png" alt="Johnson's Logo"></div>
-            </div>
-        </div>
+
+            <button class="contact-btn">Submit</button>
+            <!-- <input type="submit"> -->
+        </form>
     </section>
 
 
@@ -79,7 +93,7 @@
         <span>Site Built By Darren Delimond</span>
     </footer>
 
-    <script src="JS/app.js"></script>
+    <script src="/JS/contact.js"></script>
 </body>
 
 </html>
