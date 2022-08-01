@@ -68,9 +68,12 @@ form {
     width: 200px;
 }
 
-form:last-child {
-    text-align: center;
+textarea {
+
     /* max-width: 600px; */
+    width: 90%;
+    border-radius: 5px;
+    padding-left: 5px;
 }
 
 :root {
